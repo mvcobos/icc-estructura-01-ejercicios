@@ -12,7 +12,6 @@ public class App {
          * acceder a los métodos definidos dentro de la clase 'Repaso'.
          */
         DataStructuresPrep dataStructuresPrep = new DataStructuresPrep();
-
         /*
          * Usar la instancia 'dataStructuresPrep' para llamar al método
          * 'subtractWithoutSubtracting'.
@@ -28,7 +27,10 @@ public class App {
          * realizar operaciones básicas de manera creativa en programación.
          */
         int resultado = dataStructuresPrep.subtractAlgorithm(15, 5);
-
+        int multiplicacion = dataStructuresPrep.multiplyAlgorithm(5, 3);
+        int division = dataStructuresPrep.divideWAlgorithm(10, 2);
+        boolean perfecto = dataStructuresPrep.isPerfectNumber(6);
+        int factorial = dataStructuresPrep.getFactorial(5);
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -44,6 +46,9 @@ public class App {
          * parte de mensajes de salida o en lógicas de decisión más complejas.
          */
         System.out.println("El resultado de subtractAlgorithm  es: " + resultado);
-
+        System.out.println("El resultado de multiplyAlgorithm  es: " + multiplicacion);
+        System.out.println("El resultado de divideWAlgorithm  es: " + division);
+        System.out.println("El resultado de isPerfectNumber  es: " + perfecto);
+        System.out.println("El resultado de getFactorial  es: " + factorial);
     }
 }

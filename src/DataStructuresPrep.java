@@ -26,7 +26,11 @@ public class DataStructuresPrep {
      *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
      */
     public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count = 0;
+        while ( a > (b + count)) {
+            count++;
+        }
+        return count;
     }
 
     /**
@@ -38,8 +42,11 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+        int result = 0;
+        for ( int i = 0; i < b ; i++ ){
+        result += a;
+        }
+        return result;
     }
 
     /**
@@ -51,8 +58,14 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+        int count = 0;
+        int residuo = dividend;
+        while (residuo >= divisor){
+            count++;
+            residuo -= divisor;
+        }
+        return count;
+       
     }
 
     /**
@@ -64,7 +77,13 @@ public class DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int sum = 0;
+    for(int i = 1; i < number ; i++){
+        if ((number % i) == 0){
+            sum = sum + i;
+        }
+    }
+    return sum == number;
     }
 
     /**
@@ -75,7 +94,11 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int mul = 0;
+        for(int i = 1 ; i < number ; i++){
+            mul = number * i;
+        }
+        return mul;
     }
 
     /**
