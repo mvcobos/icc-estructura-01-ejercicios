@@ -31,6 +31,8 @@ public class App {
         int division = dataStructuresPrep.divideWAlgorithm(10, 2);
         boolean perfecto = dataStructuresPrep.isPerfectNumber(6);
         int factorial = dataStructuresPrep.getFactorial(5);
+        int potencia = dataStructuresPrep.powerAlgorithm(2,3);
+        boolean primo = dataStructuresPrep.isPrime(13);
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -50,5 +52,7 @@ public class App {
         System.out.println("El resultado de divideWAlgorithm  es: " + division);
         System.out.println("El resultado de isPerfectNumber  es: " + perfecto);
         System.out.println("El resultado de getFactorial  es: " + factorial);
+        System.out.println("El resultado de powerAlgorithm  es: " + potencia);
+        System.out.println("El resultado de isPrime  es: " + primo);
     }
 }

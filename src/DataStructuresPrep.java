@@ -94,9 +94,9 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        int mul = 0;
-        for(int i = 1 ; i < number ; i++){
-            mul = number * i;
+        int mul = 1;
+        for(int i = 1 ; i <= number ; i++){
+            mul = mul * i;
         }
         return mul;
     }
@@ -109,7 +109,10 @@ public class DataStructuresPrep {
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int mayor = 0;
+        for(int i = 0; i < int[]numbers.length; i++){
+
+        }
     }
 
     /**
@@ -121,7 +124,12 @@ public class DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int resultado = 1;
+        for(int i = 0 ; i < exponent ; i++){
+            resultado = resultado * base;
+        }
+        return resultado;
+        // h
     }
 
     /**
@@ -132,8 +140,20 @@ public class DataStructuresPrep {
      *         Ejemplo: isPrime(5) retorna true.
      */
     public boolean isPrime(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int sum = 0;
+        boolean ver = false;
+        for(int i = 1; i < number ; i++){
+            if ((number % i) == 0){
+                sum = sum + i;
+            }
+        }
+        if (sum == 1){
+            ver = true;
+        }
+        
+    return ver;
     }
+    
 
     /**
      * Cuenta cuántos dígitos tiene un número.
@@ -143,6 +163,11 @@ public class DataStructuresPrep {
      *         Ejemplo: countDigits(12345) retorna 5.
      */
     public int countDigits(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int retorna = 0;
+        for (int i = 0; number.length; i++){
+            if ()
+        }
+
+
     }
 }
